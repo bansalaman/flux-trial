@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity App - Control Panel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="calendar-view.css">
+</head>
+
+<body>
+    <header class="mt-5">
+        <section class="welcome-header d-flex ml-3">
+            <h1 class="welcome-user col-7 p-0">
+                Welcome
+                <span class="logged-in-username"> XYZ</span>
+            </h1>
+            <nav class="header-nav d-flex col-5 p-0">
+                <a href="#" class="view-profile">View Profile</a>
+                <a href="#" class="logout">Logout</a>
+            </nav>
+        </section>
+        <section class="page-nav-header mt-2">
+            <nav>
+                <a href="#" class="home-link page-nav-layout pl-3">Home</a>
+                <i class="fa fa-angle-right d-none"></i>
+                <a href="#" class="dashboard-link page-nav-layout d-none"></a>
+                <i class="fa fa-angle-right d-none"></i>
+                <a href="#" class="details-link page-nav-layout d-none"></a>
+            </nav>
+        </section>
+    </header>
+    <div class="container-fluid">
+        <header>
+            <header class="row">
+                <h5 class="col-6 col-md-8 p-0">Calendar Setup - Month View</h5>
+                <span class="col-6 col-md-4 left-right">
+                    <a href="#">Edit</a>
+                    <span class="btn-group">
+                        <a class="btn border">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn border">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn active p-1">November 2017</a>
+                    </span>
+                </span>
+            </header>
+            <div class="row  border">
+                <h5 class="col p-1 text-center mb-0 border ">MON</h5>
+                <h5 class="col p-1 text-center  mb-0 border">TUE</h5>
+                <h5 class="col p-1 text-center  mb-0 border">WED</h5>
+                <h5 class="col p-1 text-center  mb-0 border">THUR</h5>
+                <h5 class="col p-1 text-center  mb-0 border">FRI</h5>
+                <h5 class="col p-1 text-center  mb-0 border">SAT</h5>
+                <h5 class="col p-1 text-center  mb-0 border">SUN</h5>
+            </div>
+        </header>
+        <div class="row borders">
+            <div class="day col p-2 border text-truncate  text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">26</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border text-truncate text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">27</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border  text-truncate bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">28</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">29</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">30</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-4 col-sm-2">31</span>
+                    <button type="button" class="p-1 col-8 col-sm-8 text-truncate small slots-available text-white" data-toggle="modal" data-target="#myModal">
+                        </button>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">1</span>
+                </h5>
+
+            </div>
+            <div class="w-100"></div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">2</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">3</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">4</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">5</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">6</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">7</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">8</span>
+                </h5>
+
+            </div>
+            <div class="w-100"></div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">9</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">10</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">11</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">12</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">13</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">14</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">15</span>
+                </h5>
+
+            </div>
+            <div class="w-100"></div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">16</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">17</span>
+                </h5>
+                <!-- <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="Test Event with Super Duper Really Long Title">Test Event with Super Duper Really Long Title</a> -->
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">18</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">19</span>
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">20</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">21</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">22</span>
+
+
+                </h5>
+
+            </div>
+            <div class="w-100"></div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">23</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">24</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">25</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">26</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">27</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">28</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">29</span>
+
+
+                </h5>
+
+            </div>
+            <div class="w-100"></div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">30</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">1</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">2</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">3</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">4</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">4</span>
+
+
+                </h5>
+
+            </div>
+            <div class="day col p-2 border border-left-0 border-top-0 text-truncate  d-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">6</span>
+
+
+                </h5>
+
+            </div>
+        </div>
+
+        <footer class="row">
+            <div class="col-4 col-sm-3 pl-0">
+                <span class="col-4 col-sm-4 slots-available"></span>
+                <span class="col-8 col-sm-8">Slots Available</span>
+            </div>
+            <div class="col-4 col-sm-3 pl-0">
+                <span class="col-4 col-sm-4 slots-filling"></span>
+                <span class="col-8 col-sm-8">Slots Filling</span>
+            </div>
+            <div class="col-4 col-sm-3 pl-0">
+                <span class="col-4 col-sm-4 slots-full"></span>
+                <span class="col-8 col-sm-8">Slots Full</span>
+            </div>
+        </footer>
+    </div>
+
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Quick View - 10/Apr/2018</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">9:00 AM - 9:30 AM
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">9:30 AM - 10:00 AM
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">10:00 AM - 11:00 AM
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">11:00 AM - 11:30 AM
+                            </label>
+                        </div>
+
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">11:30 AM - 12:30 PM
+                            </label>
+                        </div>
+
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">12:30 PM - 11:30 AM
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">11:00 AM - 11:30 AM
+                            </label>
+                        </div>
+
+                        <button class="btn btn-primary">EDIT</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
