@@ -1,9 +1,6 @@
-.display-4 {
-    font-size: 1.5rem;
-}
 
 .day h5 {
-    background-color: #f8f9fa;
+    background-color: transparent;
     padding: 3px 5px 5px;
     margin: -8px -8px 8px -8px;
 }
@@ -26,19 +23,30 @@
     padding-top: 10px;
 }
 
-.slots-available{
-    background-color: #b2d198;
-    height: 20px;
+.all-slots{
+    background-color: #b2d198;  
 }
 
-.slots-filling {
+.few-slots {
     background-color: #d87811;  
-    height: 20px;  
+}
+
+.no-slots {
+    background-color: #c10f18;
+}
+
+.slots {
+    height: 20px;
 }
 
 .slots-full {
-    background-color: #c10f18;
-    height: 20px;
+    color:#c10f18;
+}
+
+.slots-full-display{
+    color:#c10f18;
+    padding-left: 40px;
+    font-style: italic;
 }
 
 .calendar-heading {
@@ -50,6 +58,48 @@
     padding-right: 0;
 }
 
+.arrow-btn {
+    height: 30px;
+    padding-top: 2px;
+    border-radius: 0px;
+}
+
+
+/* modal properties */
+
 .modal-content {
     width: 80%;
 }
+
+.modal-panelist {
+    padding-left: 10%;
+}
+
+.modal-checkbox-hiring {
+    display: hidden;
+}
+
+.edit-btn {
+    border-radius: 0px;
+    width:65%;
+    margin-top: 20px;
+}
+
+.form-check-label, .modal-hiring-details {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .date {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 567px) {
+    .date {
+        font-size: 10px;
+    }
+    
+}
+
